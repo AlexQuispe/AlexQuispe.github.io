@@ -1,3 +1,3 @@
-# waquispe.github.io
+# alex-quispe.github.io
 
-Página de inicio: [https://waquispe.github.io](https://waquispe.github.io)
+Página de inicio: [https://alex-quispe.github.io](https://alex-quispe.github.io)
