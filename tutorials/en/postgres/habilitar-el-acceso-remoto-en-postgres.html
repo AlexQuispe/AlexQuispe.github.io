@@ -2,7 +2,7 @@
 </code></pre><pre class=cmd-output><code>/etc/postgresql/12/main/postgresql.conf
 /usr/lib/tmpfiles.d/postgresql.conf
 ...
-</code></pre><p>Abre el archivo <code>postgresql.conf</code> que aparece en la carpeta <code>/etc/postgresql</code>.</p><pre class="language-bash cmd"><code>sudo nano /etc/postgresql/12/main/postgresql.conf
+</code></pre><p>Abre el archivo que aparece en la carpeta <code>/etc/postgresql</code>.</p><pre class="language-bash cmd"><code>sudo nano /etc/postgresql/12/main/postgresql.conf
 </code></pre><p>y adiciona la siguiente línea al final del archivo.</p><pre class=language-bash><code>listen_addresses = '*'
 </code></pre><p>Por ejemplo:</p><p class=pre-title>postgresql.conf</p><pre class="language-bash line-numbers" data-title=postgresql.conf data-line=13><code># -----------------------------
 # PostgreSQL configuration file
@@ -20,7 +20,7 @@ listen_addresses = '*'
 </code></pre><h3 class="display-4 section" id=2-configura-la-ip>2. Configura la IP</h3><p>Encuentra el archivo <code>pg_hba.conf</code>.</p><pre class="language-bash cmd"><code>sudo find / -name "pg_hba.conf"
 </code></pre><pre class=cmd-output><code>/etc/postgresql/12/main/pg_hba.conf
 ...
-</code></pre><p>Abre el archivo <code>pg_hba.conf</code> que aparece en la carpeta <code>/etc/postgresql</code></p><pre class="language-bash cmd"><code>sudo nano /etc/postgresql/12/main/pg_hba.conf
+</code></pre><p>Abre el archivo que aparece en la carpeta <code>/etc/postgresql</code>.</p><pre class="language-bash cmd"><code>sudo nano /etc/postgresql/12/main/pg_hba.conf
 </code></pre><p>y adiciona la siguiente línea al final del archivo.</p><pre class=language-bash><code>host    all             all             192.168.32.1/32         md5
 </code></pre><p>Por ejemplo:</p><p class=pre-title>pg_hba.conf</p><pre class="language-bash line-numbers" data-title=pg_hba.conf data-line=18><code># PostgreSQL Client Authentication Configuration File
 # ===================================================
