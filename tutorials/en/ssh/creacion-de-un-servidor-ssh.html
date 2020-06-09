@@ -15,7 +15,7 @@
            └─3234 /usr/sbin/sshd -D
 
 ...
-</code></pre><h2 id=inicio-automatico class=section>Inicio automático</h2><p>Al igual que cualquier otro servicio, es posible configurar el inicio automático cada vez que se encienda el equipo.</p><pre class="language-bash cmd"><code>sudo systemctl enable ssh
+</code></pre><h2 id=inicio-automatico class=section>Inicio automático</h2><p>Configura el inicio automático del servicio.</p><pre class="language-bash cmd"><code>sudo systemctl enable ssh
 </code></pre><pre class="language-bash cmd"><code>sudo systemctl disable ssh
 </code></pre><p>Desde el archivo de configuración <code>sshd_config</code> se puede configurar características del servidor como por ejemplo el puerto, el tipo de conexión permitido, etc.</p><pre class="language-bash cmd"><code>sudo nano /etc/ssh/sshd_config
 </code></pre><h2 id=comandos-utiles-para-identificar-al-servidor class=section>Comandos útiles para identificar al servidor</h2><p>Muestra la dirección IP del servidor.</p><pre class="language-bash cmd"><code>hostname -I
